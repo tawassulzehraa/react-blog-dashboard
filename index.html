@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal profile|Tawassul Zehra</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: #f1f5f9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #334155;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .profile-card{
+            background-color: #ffffff;
+            max-width:600px;
+            width: 100%;
+            padding: 30px;
+            border-radius:16px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1{
+            color: #4f46e5;
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+        }
+
+        .tagline{
+            text-align:center;
+            color: #64748b;
+            font-weight:500;
+            margin-bottom: 20px;
+        }
+
+        h2{
+            color: #0f172a;
+            font-size: 1.4rem;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 5px;
+        }
+
+        p{
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        ul{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        li{
+            background-color: #eef2ff;
+            color: #4f46e5;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            bprder: 1px solid #e0e7ff;
+        }
+
+        .contact-links a{
+            color: #4f46e5;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .contact-links a:hover{
+            text-decoration: underline;
+        }
+
+        @media (max-width: 480px){
+            body{
+                padding: 10px;
+            }
+            .profile-card{
+                padding: 20px;
+            }
+            h1{
+                font-size: 1.8rem;
+            }
+            h2{
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+    <!-- main heading -->
+     <h1>Tawassul Zehra</h1>
+     <p class="tagline">Aspiring Web Developer</p>
+
+     <hr>
+
+     <!-- About Me Section -->
+      <section>
+         <h2>About Me</h2>
+         <p>Hello! I'm Tawassul, an aspiring web developer with a passion for creating engaging and user-friendly websites.</p>
+         <p>When i am not coding, you can find me reading books and watching movies.</p>
+      </section>
+
+      <hr>
+
+      <!-- Skills Section -->
+       <section>
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+       </section>
+
+       <hr>
+
+       <!-- Contact Section -->
+       <section class="contact-links">
+        <h2>Contact Me</h2>
+        <p>If you would like to collaborate or just say hi, feel free to reach out:</p>
+        <p>
+            Email: <a href="mailto:tawassulzahra32@gmail.com">tawassulzahra32@gmail.com</a>
+        </p>
+        <p>
+            Linkedin: <a href="https://www.linkedin.com/in/tawassul-zehra-28660a35b/?isSelfProfile=true">Tawassul Zehra</a>
+        </p>
+       </section> 
+    </div>
+</body>
+</html>
