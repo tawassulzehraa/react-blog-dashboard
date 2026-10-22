@@ -1,0 +1,145 @@
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: system-ui, sans-serif;
+  color: #333;
+}
+
+.dashboard-header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+/* Stats Layout Grid */
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.stat-card h3 { margin: 0 0 10px 0; font-size: 1.1rem; color: #555; }
+.stat-card p { margin: 0; font-size: 1.8rem; font-weight: bold; }
+.stat-card.total { border-left: 5px solid #3498db; }
+.stat-card.featured { border-left: 5px solid #f1c40f; }
+.stat-card.time { border-left: 5px solid #2ecc71; }
+
+/* Search Inputs Flexbox Layout */
+.search-bar-container {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.category-select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: white;
+  min-width: 160px;
+}
+
+/* Blog Cards Layout Grid */
+.blog-list-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.blog-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card.is-featured {
+  background-color: #fffdf0;
+  border-top: 4px solid #f1c40f;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.category-badge {
+  background: #e1f5fe;
+  color: #0288d1;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.featured-badge {
+  color: #f1c40f;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.card-title { margin: 0 0 10px 0; color: #2c3e50; }
+.card-author, .card-time { margin: 5px 0; color: #7f8c8d; font-size: 0.95rem; }
+
+/* Action Buttons Styling */
+.card-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+.btn-fav, .btn-delete {
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.btn-fav {
+  flex: 1;
+  border: 1px solid #ccc;
+  background: white;
+}
+
+.btn-fav.favorited {
+  background: #fff59d;
+  border-color: #fbc02d;
+}
+
+.btn-delete {
+  background: #e74c3c;
+  color: white;
+  border: none;
+}
+
+.btn-delete:hover { background: #c0392b; }
+.no-results { text-align: center; color: #7f8c8d; font-size: 1.1rem; margin-top: 40px; }
